@@ -1,9 +1,16 @@
 const express = require('express')
 const app = express()
 const port = 3001
+require('dotenv').config();
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+    try {
+        console.log('123', process.env.API_KEY)
+        res.send('Hello World!')
+    } catch (err) {
+        res.send({err: err});
+    }
+//   res.send('Hello World!')
 })
 
 app.listen(port, () => {
