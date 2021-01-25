@@ -1,12 +1,18 @@
+require('dotenv').config();
 const express = require('express')
 const app = express()
+const axios = require("axios");
 const port = 3001
-require('dotenv').config();
 
 app.get('/', (req, res) => {
     try {
-        console.log('123', process.env.API_KEY)
-        res.send('Hello World!')
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Vancouver&appid=${process.env.API_KEY}&units=metric`)
+            .then((response) => {
+                console.log('response', response.data)
+                res.send(response.data)
+            })
+
+        // res.send('hello world')
     } catch (err) {
         res.send({err: err});
     }
