@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
     try {        
         axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${req.query.city}&appid=${process.env.API_KEY}&units=metric`)
-            .then((response) => {
+        .then(response => {
             let modifiedData = {
                 status: response.data.weather[0].main,
                 description: response.data.weather[0].description,
@@ -21,9 +21,11 @@ app.get('/', (req, res) => {
                 humidity: response.data.main.humidity
             };
             res.json(modifiedData)
+        }).catch(err => {
+            res.send({ err })
         })
     } catch (err) {
-        res.send({err: err});
+        res.send({ err: err });
     }
 })
 
