@@ -2,21 +2,24 @@ require('dotenv').config();
 const express = require('express')
 const app = express()
 const axios = require("axios");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 const port = 3001
+
+app.use(cors());
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     try {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Vancouver&appid=${process.env.API_KEY}&units=metric`)
-            .then((response) => {
-                console.log('response', response.data)
-                res.send(response.data)
-            })
-
-        // res.send('hello world')
+        // axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Vancouver&appid=${process.env.API_KEY}&units=metric`)
+        //     .then((response) => {
+        //         console.log('response', response.data)
+        //         res.send(response.data)
+        //     })
+        res.send('Hello world')
     } catch (err) {
         res.send({err: err});
     }
-//   res.send('Hello World!')
 })
 
 app.listen(port, () => {
