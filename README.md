@@ -8,6 +8,12 @@ npm install
 npm run dev
 ```
 
+### Env file
+Please create an env file and add the api_key that I will provide in a secure matter. 
+```
+touch .env
+```
+
 ### Date
 Monday, January 25, 2021. 
 
