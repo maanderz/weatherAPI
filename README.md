@@ -9,7 +9,7 @@ npm run dev
 ```
 
 ### Env file
-Please create an env file and add the api_key that I will provide in a secure matter. 
+Please follow the .env_example file and fill in the API key that I've provided in a secure manner.
 ```
 touch .env
 ```
