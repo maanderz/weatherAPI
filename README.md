@@ -32,7 +32,7 @@ Here is a list of assumptions I've made while creating the application:
 ### Shortcuts/Compromises made
 Currently, the application throws an error if the user decides to enter in abbreviated cities and provinces. In the real-world application, I would implement an autocomplete feature in the input field so there is more control to what data should be sent in the request. I also assumed that the user wants to see a JSON object in the frontend, in a real-world application I would use more time to understand what the user wants to see before implementation. 
 
-I've implemented a couple of unit tests. In the real-world application I would want to also implement some end-to-end tests. 
+In the real-world application I would want to also implement some end-to-end tests, and incoporate some unit tests as I build functions. 
 
 ### Stretch goals attempted
 If applicable, use this area to tell us what stretch goals you attempted. What went well? What do you wish you could have done better? If you didn't attempt any of the stretch goals, feel free to let us know why.
