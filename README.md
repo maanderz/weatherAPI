@@ -59,4 +59,4 @@ I have considered end-to-end and unit tests as I was developing. I tried to impl
 For my tech stack, I chose Javascript and Express. I chose this stack because I am the most comfortable with it, and that Javascript can be either used as object-oriented programming or functional programming. I believe the strong points of using Javascript are the open source community for feedback, the flexibility of JS, and cross-browser usability. In my experience some weaknesses in Javascript are difficulty with asyncronicity and security due to code being executed on the client-side. 
 
 ### Your feedback on this technical challenge
-Have feedback for how we could make this assignment better? Please let us know.
+I had alot of fun working on this challenge! It was well-written, clear, and easy to grasp. 
