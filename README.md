@@ -20,6 +20,10 @@ Monday, January 25, 2021.
 ### Location of deployed application
 I tried to host the application frontend on Netlify and the backend on Heroku. I came across a CORS issue and decided to turn in my application locally. 
 
+**UPDATE:
+https://maanderz-weather-app.herokuapp.com/
+I've successfully hosted my API on heroku. GET requests can be sent to this url with the city parameter to receive a JSON response. 
+
 ### Time spent
 6 hours. 
 
